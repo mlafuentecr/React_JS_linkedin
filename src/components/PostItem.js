@@ -9,15 +9,19 @@ export default function PostItem({ data }) {
 			<div className='card my-2 border-0'>
 				<div className='card-body bg-dark '>
 					<label className='list-group-item mb-3 bg-dark text-white m-0 p-0  d-flex justify-content-start'>
-						<img className='rounded-circle me-2' src='https://i.pravatar.cc/150?img=3' style={{ width: '45px', height: '45px' }} alt='' />
-						<div className='description d-flex flex-wrap'>
-							<span className='col-12'>{data.name}</span>
-							<br />
-							<small className='text-muted col-12 col-md-9 '>Company • Information Technology and Services</small>
-							<button type='button' className='btn btn-outline-light rounded-pill p-0 m-0 my-2' style={{ width: '95px', height: '35px' }}>
-								+ Follow
-							</button>
-							<span className='col-12 '>{data.message}</span>
+						<div className='col-12'>
+							<div className='card__description d-flex flex-wrap  justify-content-between'>
+								<img className='rounded-circle me-2' src='https://i.pravatar.cc/150?img=3' style={{ width: '45px', height: '45px' }} alt='' />
+								<div className='card__content '>
+									<span>{data.name}</span>
+									<br />
+									<small className='text-muted col-12 col-md-8 '>Company • Information Technology and Services</small>
+								</div>
+								<button type='button' className='btn btn-outline-light rounded-pill p-0 m-0 my-2 ' style={{ width: '95px', height: '35px' }}>
+									+ Follow
+								</button>
+								<span className='col-12 my-2'>{data.message}</span>
+							</div>
 						</div>
 					</label>
 
