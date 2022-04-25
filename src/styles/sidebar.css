@@ -1,0 +1,15 @@
+.app_sidebar {
+  min-width: 225px;
+}
+
+.app_sidebar .app_sidebar-avatar {
+  display: flex;
+  flex-direction: column !important;
+
+}
+
+.app_sidebar .app_sidebar-avatar .avatar__img {
+  margin: auto;
+  position: relative;
+  top: -20px;
+}
