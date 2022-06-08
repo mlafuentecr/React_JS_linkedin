@@ -39,6 +39,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+DB in Firebase
+[Firebase](https://console.firebase.google.com/u/0/project/linkedin-clone-2cf4e/firestore/data/~2Fposts~2FIGLojf3aWqlO3XU64pKI)
+config in notion
+[notion](https://www.notion.so/Firebase-7d616340993441fe97da4bfe43f4a9e1)
+[Video Base](https://www.youtube.com/watch?v=QaYts9sPmcY)
+2:30min
