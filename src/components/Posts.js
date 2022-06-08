@@ -6,7 +6,7 @@ import { FaEdit, FaImage, FaYoutube, FaCalendar, FaSquare } from 'react-icons/fa
 import FeedIcon from './FeedIcon';
 import { useEffect, useState } from 'react';
 import { db } from '../firebase-config';
-import { collection, onSnapshot, addDoc, query, orderBy, serverTimestamp } from 'firebase/firestore';
+import { collection, onSnapshot, addDoc, query, orderBy, serverTimestamp, getFirestore } from 'firebase/firestore';
 
 export default function Posts() {
 	const [feedPost, setFeedPost] = useState([]);
@@ -15,6 +15,7 @@ export default function Posts() {
 	//get firebase post
 	useEffect(() => {
 		///GET SNAPSHOT FROM DB
+		const db = getFirestore();
 		const queryPost = query(collection(db, 'posts'), orderBy('timestamp', 'desc'));
 
 		const posts = onSnapshot(
